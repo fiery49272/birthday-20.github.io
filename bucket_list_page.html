@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #FF69B4, #8A2BE2); /* Pink to Purple */
+            color: #5C5C6D;
+            font-family: 'Poppins', sans-serif;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item h2 {
+            font-family: 'Playfair Display', serif;
+            color: #e6639c;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .grid-item h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: #5C5C6D;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #f680bb;
+        }
+
+        .pinterest-link {
+            display: inline-block;
+            background: white;
+            color: #e6639c;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .pinterest-link:hover {
+            background: #e6639c;
+            color: white;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>20 Things I Want To Do With You</h1>
+    <hr>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Start our own cafe</h2>
+            <h4>Create a space filled with love, good vibes, and create something of our own.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Go on a Fancy Dinner</h2>
+            <h4>Dress up in formal attire and dine at a fancy luxurious 7-star restaurant.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Take a picture in front of the Eiffel Tower</h2>
+            <h4>A picture I want to frame, capturing our core memory.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Stay In An Overwater Bungalow In The Maldives</h2>
+            <h4>The perfect escape to paradise with crystal-clear waters.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Visit Disneyland And Universal Studios</h2>
+            <h4>Relive childhood magic and explore thrilling rides.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Go to an Amusement Park</h2>
+            <h4>Eat cotton candy, play games, and ride thrilling coasters.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Experience Nightlife & Clubbing</h2>
+            <h4>Party, drive around, and enjoy the best desserts.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Design and Build a House</h2>
+            <h4>Our dream home, designed with love and care.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Visit Santorini</h2>
+            <h4>Need I say more?</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Go Stargazing</h2>
+            <h4>Lose ourselves in constellations and the universe’s beauty.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Go on a Road Trip</h2>
+            <h4>Experience a long road trip always moving and staying in different places, eating local food.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Host a Dinner Party</h2>
+            <h4>Cook everything ourselves and invite our core friends over and have a great time.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Start a Family</h2>
+            <h4>Pets first, and then, when the time is right, kids.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Go Scuba Diving</h2>
+            <h4>Explore the ocean and its beauty.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Try Every Cuisine in Its Authentic Location</h2>
+            <h4>Italian in Italy, Japanese in Japan, and so much more.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Attend a Coldplay Concert</h2>
+            <h4>Feel the surrealness together.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>See the Northern Lights</h2>
+            <h4>A magical moment under Arctic skies.</h4>
+        </div>
+        <div class="grid-item">
+            <h2>Visit All 7 Continents</h2>
+            <h4>A lifetime achievement that I want to complete together.</h4>
+        </div>
+    </div>
+    <hr>
+    <a href="https://pin.it/3o7RHVRF1" target="_blank" class="pinterest-link">Our Pinterest Board</a>
+    <br>
+    <br>
+</body>
+</html>

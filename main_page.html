@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>20<3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Averia Serif Libre', cursive;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(to right, #6A11CB, #2575FC);
+      color: #B56576;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+    header {
+      width: 100%;
+      height: 150px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top:0;
+      text-align: center;
+      background: linear-gradient(to right, #6A11CB, #2575FC);
+      color: #FF69B4;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    header h1 {
+      z-index: 1;
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    pre {
+      padding: 20px 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      font-size: 1.2rem;
+      color: white;
+      font-family: 'Glass Antiqua', cursive;
+      text-align: center;
+      max-width: 800px;
+    }
+    
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #FFB6C1;
+      margin: 25px 0;
+      width: 85%;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+      margin-bottom: 25px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin-top: 25px;
+    }
+    .grid-item {
+      background: #FF69B4;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .grid-item h2 {
+      font-family: 'Courier New', Courier, monospace;
+      color: #FFE6F2;
+      margin-bottom: 15px;
+    }
+    
+    a {
+      color: #D95D92;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #FF69B4;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 90px;
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Glass+Antiqua&family=Lobster&family=Lovely+May&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Happy Birthday Shivee!</h1>
+  </header>
+
+  <br>
+  <img src="cover_pic.jpg" height="450">
+  <pre>
+      Welcome to the 20s club, you're officially not-a-teenager anymore.
+      Since I couldn't be with you today and since I wanted to do
+      something different I made this website for you.
+      I hope you like it.</pre>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <h2>20 Things I Want To Do With You</h2>
+      <a href="bucket_list_page.html">
+        <img src="bucket_list.jpg" height="250">
+      </a>
+    </div>
+    <div class="grid-item">
+      <h2>20 Songs That Remind Me Of You</h2>
+      <a href="song_page.html">
+        <img src="album_cover.jpg" height="250">
+      </a>
+    </div>
+    <div class="grid-item">
+      <h2>A Handwritten Letter</h2>
+      <a href="letter_page.html">
+        <img src="letter_cover.jpg" height="250">
+      </a>
+    </div>
+    <div class="grid-item">
+      <h2>20 Reasons I Love You</h2>
+      <a href="reasons_page.html">
+        <img src="reasons_cover.jpg" height="250">
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    © 20 Years Of Life | Made By Someone Who Loves You Very Much
+  </footer>
+</body>
+</html>
